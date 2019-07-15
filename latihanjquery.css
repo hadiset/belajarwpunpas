@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+div.container{     
+    width: 600px;    
+    margin: auto;      
+    overflow: auto;
+}
+
+#judul{
+    position: relative;
+    width: 600px;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+
+}
+
+div#preview{
+    position: relative;
+    margin-top: 5px;    
+}
+
+.anima{
+    animation: coba 1s ease-in-out forwards;
+}
+
+@keyframes coba{
+    from{opacity: 0.0;}
+    to{opacity: 1.0;}
+}
+
+.panah{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 320px;
+    margin-top: -100px;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.panah:hover{
+    opacity: 0.5;
+}
+
+#kiri{
+    transform: rotate(180deg);    
+    left: 10px;
+}
+
+#kanan{
+    right: 10px;
+}
+
+.imgThumb{
+    position: relative;
+    width: 200px;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid white;
+    cursor: pointer;        
+}
+
+.imgThumb:hover{
+    opacity: 0.5;
+}

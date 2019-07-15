@@ -1,0 +1,72 @@
+div#container{
+    width: 600px;
+    position: relative;
+    margin: 50px 50px ;
+    padding: 10px;
+}
+
+div#kontak{
+    border: 1px solid black;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+img#fotoProfil{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%; 
+    margin: 0;
+    position: absolute;
+}
+
+span{
+    display: block;
+}
+
+span#nama{
+    position: absolute;
+    top: 80px;
+    margin-top: -50px;
+    left: 350px;
+    margin-left: -200px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, sans-serif;
+    text-shadow: 1px 1px 7px black;
+
+}
+
+span#telp{
+    position: absolute;
+    top: 105px;
+    margin-top: -50px;
+    left: 430px;
+    margin-left: -200px;
+    font-size: 13px;    
+    font-family: Georgia, sans-serif;
+    text-shadow: 1px 1px 7px black;
+}
+
+span#close{
+    position: absolute;
+    top: 88px;
+    margin-top: -50px;
+    right: 40px;
+    margin-right: -20px;
+    font-size: 20px;    
+    font-family: Georgia, sans-serif;    
+    color: red;        
+    cursor: pointer;
+}
+
+
+#close:hover{
+    text-shadow: 1px 1px 7px red;
+}
+
+#close:active{
+    font-size: 25px;
+}
