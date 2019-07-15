@@ -1,0 +1,29 @@
+table, tr, td, th{    
+    border-collapse: collapse;
+}
+
+#data {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#data td, #data th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#data tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#data tr:hover{
+    background-color: #ddd;
+}
+
+#data th{
+    padding-top: 12px;
+    padding-bottom: 12px;    
+    background-color: #4CAF50;
+    color: white; 
+}
