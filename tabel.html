@@ -12,7 +12,8 @@
     <div class="container">
         <button id="addButton" type="button">Add</button>
         <table id="data">
-            <tr>                
+            <tr>
+                <th>NIM</th>                
                 <th>Firstname</th>
                 <th>Lastname</th>
                 <th>Age</th>
@@ -25,10 +26,13 @@
                 <hr class="modal-line">
                 <div class="modal-content">
                     <form action="">
+                            <label for="nim">NIM</label>
+                            <input type="number" name="nim" id="nim" placeholder="Your ID">
+
                         <label for="fname">Firstname</label>
                         <input type="text" name="fname" id="fname" placeholder="Your Firstname">
 
-                        <label for="fname">Lastname</label>
+                        <label for="lname">Lastname</label>
                         <input type="text" name="lname" id="lname" placeholder="Your Lastname">
                         
                         <label for="age">Age</label>

@@ -1,20 +1,20 @@
 const data=[
-    {"id" : "1", "firstName" : "Hadi", "lastName" : "Setiawan", "age" : "23"},
-    {"id" : "2", "firstName" : "Shandika", "lastName" : "Galih", "age" : "30"},
-    {"id" : "3", "firstName" : "Angga", "lastName" : "Risky", "age" : "22"}
+    {"nim" : "14201202", "firstName" : "Hadi", "lastName" : "Setiawan", "age" : "23"},
+    {"nim" : "14201203", "firstName" : "Shandika", "lastName" : "Galih", "age" : "30"},
+    {"nim" : "14201204", "firstName" : "Angga", "lastName" : "Risky", "age" : "22"}
 ];
 
-function tambahTabel(x,y,z){
-    return "<tr><td>"+x+"</td><td>"+y+"</td><td>"+z+"</td></tr>";
+function tambahTabel(w,x,y,z){
+    return "<tr><td>"+w+"</td><td>"+x+"</td><td>"+y+"</td><td>"+z+"</td></tr>";
 }
 
 
 
-function tambahData(namaDepan, namaBelakang, umur){
-    data.push({id : (data.length+1), firstName : namaDepan, lastName : namaBelakang, age : umur});
+function tambahData(nim, namaDepan, namaBelakang, umur){
+    data.push({nim : nim, firstName : namaDepan, lastName : namaBelakang, age : umur});
 }
 
-// tambahData("Isa", "Ardiansyah", "16");
+tambahData("14201205","Isa", "Ardiansyah", "16");
 
 
 
@@ -38,20 +38,14 @@ $(document).click(function(event){
 //Fungsi input
 $("#addData").click(function(){
     event.preventDefault();
-    tambahData($("#fname").val(), $("#lname").val(), $("#age").val());    
-    $.each(data, function(i, value){
-        const x = value.firstName;
-        const y = value.lastName;
-        const z = value.age;
-        
-        $("#data").append(tambahTabel(x,y,z));    
-    });
+    tambahData($("#nim").val(), $("#fname").val(), $("#lname").val(), $("#age").val());        
+    $("#data").append(tambahTabel($("#nim").val(), $("#fname").val(), $("#lname").val(), $("#age").val()));           
 });
 
 $.each(data, function(i, value){
+    const w = value.nim;
     const x = value.firstName;
     const y = value.lastName;
-    const z = value.age;
-    
-    $("#data").append(tambahTabel(x,y,z));    
+    const z = value.age;    
+    $("#data").append(tambahTabel(w,x,y,z));    
 });
