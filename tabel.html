@@ -10,28 +10,36 @@
 </head>
 <body>
     <div class="container">
+        <button id="addButton" type="button">Add</button>
         <table id="data">
             <tr>                
-                <th>Nama</th>
-                <th>Asal</th>
-                <th>Hobby</th>
-            </tr>
-            <!-- <tr>                
-                <td>Nama</td>
-                <td>Asal</td>
-                <td>Hobby</td>
-            </tr>
-            <tr>                
-                <td>Nama</td>
-                <td>Asal</td>
-                <td>Hobby</td>
-            </tr>
-            <tr>                
-                <td>Nama</td>
-                <td>Asal</td>
-                <td>Hobby</td>
-            </tr> -->
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>            
         </table>
+        <div class="modal">
+            <div class="modal-box">
+                <p class="modal-title">Your Data</p>
+                <span class="modal-close">x</span>
+                <hr class="modal-line">
+                <div class="modal-content">
+                    <form action="">
+                        <label for="fname">Firstname</label>
+                        <input type="text" name="fname" id="fname" placeholder="Your Firstname">
+
+                        <label for="fname">Lastname</label>
+                        <input type="text" name="lname" id="lname" placeholder="Your Lastname">
+                        
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" max="100" placeholder="Your Age in Number">
+                        
+                        <button type="submit" id="addData">Add</button>
+                    </form>
+                </div>
+                <hr class="modal-line">
+            </div>            
+        </div>
     </div>
     <script src="tabel.js"></script>
 </body>
