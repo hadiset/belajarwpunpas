@@ -5,7 +5,7 @@ const data=[
 ];
 
 function tambahTabel(w,x,y,z){
-    return "<tr><td>"+w+"</td><td>"+x+"</td><td>"+y+"</td><td>"+z+"</td></tr>";
+    return "<tr><td>"+w+"</td><td>"+x+"</td><td>"+y+"</td><td>"+z+"</td><td id=\"btnEdit\">Edit</td><td id=\"btnRemove\">Delete</td></tr>";
 }
 
 
@@ -15,6 +15,7 @@ function tambahData(nim, namaDepan, namaBelakang, umur){
 }
 
 tambahData("14201205","Isa", "Ardiansyah", "16");
+data.splice(0,1);
 
 
 
