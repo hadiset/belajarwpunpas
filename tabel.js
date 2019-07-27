@@ -5,7 +5,7 @@ const data=[
 ];
 
 function tambahTabel(w,x,y,z){
-    return "<tr><td>"+w+"</td><td>"+x+"</td><td>"+y+"</td><td>"+z+"</td><td id=\"btnEdit\">Edit</td><td id=\"btnRemove\">Delete</td></tr>";
+    return "<tr><td id=\"tblNim\">"+w+"</td><td id=\"tblFname\">"+x+"</td><td id=\"tblLname\">"+y+"</td><td id=\"tblAge\">"+z+"</td><td id=\"btnEdit\">Edit</td><td id=\"btnRemove\">Delete</td></tr>";
 }
 
 
@@ -49,4 +49,16 @@ $.each(data, function(i, value){
     const y = value.lastName;
     const z = value.age;    
     $("#data").append(tambahTabel(w,x,y,z));    
+});
+
+// $("#btnEdit").click(function(){
+//     $(".modal").css("display","block");
+//     console.log()
+// });
+
+$("#data").ready(function(){
+    $().click(function(){
+        $(".modal").css("display","block");
+        console.log($(this).attr('id'));
+    });
 });

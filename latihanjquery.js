@@ -2,8 +2,7 @@ function next(pre){
     const x = $('#thumbnail').find('img');
     $.each(x, function(index, value){
         if($(value).attr('src') == pre){
-            if($(value.nextElementSibling).attr('src') != undefined){
-                // $('#imgPre').attr('src', $(value.nextElementSibling).attr('src'));            
+            if($(value.nextElementSibling).attr('src') != undefined){                
                 $('#imgPre').attr('src', $(value).next().attr('src'));            
                 selected($(value.nextElementSibling).attr('src'));
                 animated();
@@ -17,8 +16,7 @@ function back(pre){
     const x = $('#thumbnail').find('img');
     $.each(x, function(index, value){
         if($(value).attr('src') == pre){
-            if($(value.previousElementSibling).attr('src') != undefined){
-                // $('#imgPre').attr('src', $(value.previousElementSibling).attr('src'));
+            if($(value.previousElementSibling).attr('src') != undefined){                
                 $('#imgPre').attr('src', $(value).prev().attr('src'));
                 selected($(value.previousElementSibling).attr('src'));
                 animated();
@@ -53,12 +51,10 @@ $(document).ready(function(){
     $.each(t, function(index, value){
         if(x == $(value).attr('src')){selected($(value).attr('src'));animated()}
     });
-    $('.imgThumb').click(function(x){
-    //    console.log($(this).attr('src'));
+    $('.imgThumb').click(function(x){    
        $('#imgPre').attr('src', $(this).attr('src'));
        animated();
-       selected($(this).attr('src'));
-    // console.log(x);
+       selected($(this).attr('src'));    
     });
 
     $('.panah').click(function(x){
