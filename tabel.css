@@ -2,6 +2,11 @@ table, tr, td, th{
     border-collapse: collapse;
 }
 
+div.container{
+    width: 600px;
+    margin: auto;
+}
+
 #tblData {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
@@ -26,6 +31,17 @@ table, tr, td, th{
     padding-bottom: 12px;    
     background-color: #4CAF50;
     color: white; 
+}
+
+td#btnEdit, td#btnRemove {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+td#btnEdit:hover, td#btnRemove:hover {
+    cursor: pointer;
+    color: #4CAF50;
+    text-shadow: 2px 2px 8px #45a049;
 }
 
 #addButton{
